@@ -1,0 +1,8 @@
+MCP2200 driver API open Source implementation.
+
+I was tired of booting windows to play with my MCP2200 breakout, I decided to develop this library to manipulate it on UNIX.
+The original Microchip API is somehow sloppy, but is documented (see http://www.microchip.com/wwwproducts/devices.aspx?dDocName=en546923 datasheet and DLL examples). This library is conform to the original API but add more methods.
+
+Some functions were missing, like setting manufacturer string. These are available in this implementation thanks to "noe" reverse-engineering found on stackoverflow (http://stackoverflow.com/a/23106926).
+
+Finally, the mcp2200_config command line tool to configure the chip is included as an example of the library.
